@@ -1,0 +1,10 @@
+name: TwilightForest
+version: 1.0.0
+main: me.chickenstyle.twilightforest.TwilightForest
+api-version: 1.17
+authors: [ ChickenStyle ]
+load: STARTUP
+description: adds Twilight Forest as a plugin!
+commands:
+  move:
+    description: Test command to move in dimentions
