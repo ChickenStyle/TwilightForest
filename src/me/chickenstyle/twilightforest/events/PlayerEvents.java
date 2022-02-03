@@ -22,9 +22,9 @@ import java.util.List;
 
 public record PlayerEvents(TwilightForest main) implements Listener {
 
-    @EventHandler
+    @EventHandler //To test if the custom biomes work
     public void PlayerInteractEvent(PlayerInteractEvent e) {
-        main.getNmsHandler().setCustomBiomeAt(TFBiome.FIRE_SWAP,e.getClickedBlock().getLocation());
+        main.getNmsHandler().setBiomeInChunk(TFBiome.FIRE_SWAP,e.getClickedBlock().getLocation().getChunk());
     }
 
     @EventHandler
